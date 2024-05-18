@@ -56,6 +56,7 @@ document.querySelector(".again").addEventListener("click", function () {
   console.log(guessNumber);
   document.querySelector(".number").style.width = "15rem";
   document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".message").textContent = "Start Guessing...";
   document.querySelector(".number").textContent = "?";
   document.querySelector(".score").textContent = 20;
 });
