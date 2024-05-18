@@ -9,7 +9,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "No number!";
   } else if (guess > guessNumber) {
     if (Number(document.querySelector(".score").textContent) > 1) {
-      document.querySelector(".message").textContent = "Too High";
+      document.querySelector(".message").textContent = "High";
       const x = Number(document.querySelector(".score").textContent);
       document.querySelector(".score").textContent = x - 1;
       document.querySelector("body").style.backgroundColor = "#222";
@@ -20,7 +20,7 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   } else if (guess < guessNumber) {
     if (Number(document.querySelector(".score").textContent) > 1) {
-      document.querySelector(".message").textContent = "Too Low";
+      document.querySelector(".message").textContent = "Low";
       const x = Number(document.querySelector(".score").textContent);
       document.querySelector(".score").textContent = x - 1;
       document.querySelector("body").style.backgroundColor = "#222";
